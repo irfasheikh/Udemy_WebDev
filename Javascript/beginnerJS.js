@@ -43,8 +43,39 @@ var firstChar = name.slice(0,1);
 //make it toUpperCase
 var upperCase = firstChar.toUpperCase();
 //get the rest of the name
-var restofName = name.slice(1,name.length);
+//var restofName = name.slice(1,name.length);
+restofName = restofName.toLowerCase();
 //concat it up with upper first char
 var capitalizedName = firstChar + restofName;
 //3. use the capitalize name in the greeting alert
 alert("Hello " + capitalizedName);
+
+function main(){
+   move();
+   move();
+   move();
+   move();
+   turnleft();
+   move();
+   move();
+   move();
+   move();
+
+}
+//lots of repeated code so think of a function, 
+
+
+function moveFourTimes(){
+   move();
+   move();
+   move();
+   move();
+}
+
+// now it's consolidated code
+
+function main () {
+   moveFourTimes ();
+   turnLeft();
+   moveFourTimes();
+}
